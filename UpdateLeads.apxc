@@ -10,7 +10,7 @@ global class UpdateLeads implements Database.Batchable<sObject>, Database.Statef
        
        List<Lead> lstOfLead = (List<Lead>)scope;
        for(Lead ld : lstOfLead){
-           ld.LeadSource = 'Dreamforce';
+           ld.LeadSource = 'Web';
            ld.Rating= 'Hot';
            
            lstOfUpdatedLead.add(ld);
